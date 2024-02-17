@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "8fb11abb-fab6-4b24-83d8-4555b1be8f42",
+		"name": "realtime-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9624216"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/message?message=Hello from the Birthday Boy!",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"message\": \"Hello from the Birthday Boy!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/message",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"message"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "Hello from the Birthday Boy!",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
